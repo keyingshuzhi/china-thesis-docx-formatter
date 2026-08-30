@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "source": { "template_filename": "generic-doctoral-starting-point.docx", "extractor": "manual_generic_profile" },
+  "degree_profile": { "level": "doctoral", "label": "中国博士学位论文", "scope": "China domestic degree thesis", "is_formatting_authority": false },
+  "document_structure": { "detected_sections": [], "review_sections": [], "note": "Generic starting point only; analyse the official template." },
+  "page": {},
+  "styles": {},
+  "role_rules": {
+    "body": { "source_style": "Normal", "source_style_id": "Normal", "confidence": "generic_starting_point", "format": { "font": {}, "paragraph": {} } }
+  },
+  "table_rules": { "observed": false },
+  "figure_rules": { "caption_role": null },
+  "reference_rules": { "entry_role": null },
+  "extraction_warnings": ["This is not a university-compliant rule set. Generate rules from the official template before submission formatting."]
+}

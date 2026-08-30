@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "source": { "template_filename": "generic-journal-starting-point.docx", "extractor": "manual_generic_profile" },
+  "page": {},
+  "styles": {},
+  "role_rules": {
+    "body": { "source_style": "Normal", "source_style_id": "Normal", "confidence": "generic_starting_point", "format": { "font": {}, "paragraph": {} } }
+  },
+  "table_rules": { "observed": false },
+  "figure_rules": { "caption_role": null },
+  "reference_rules": { "entry_role": null },
+  "extraction_warnings": ["This is not a university-compliant rule set. Generate rules from the official template before submission formatting."]
+}
