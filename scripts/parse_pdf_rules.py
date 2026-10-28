@@ -17,13 +17,11 @@ def classify(line: str) -> list[str]:
     return [keyword for keyword in KEYWORDS if keyword in line or keyword in lowered]
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("guide_pdf", type=Path)
-    parser.add_argument("--output", "-o", required=True, type=Path)
-    args = parser.parse_args()
+def extract_pdf_rules(guide_pdf: str | Path) -> dict:
+    """Return page-cited candidate requirements from a text-based PDF guide."""
+    source = Path(guide_pdf)
     requirements, warnings, pages = [], [], []
-    with pdfplumber.open(args.guide_pdf) as pdf:
+    with pdfplumber.open(source) as pdf:
         for number, page in enumerate(pdf.pages, start=1):
             text = page.extract_text() or ""
             pages.append({"page": number, "characters": len(text)})
@@ -33,11 +31,25 @@ def main() -> None:
                 topics = classify(line)
                 if topics:
                     requirements.append({"page": number, "topics": topics, "evidence": line.strip()})
-    payload = {"schema_version": "1.0", "source": {"guide_filename": args.guide_pdf.name, "type": "pdf"},
-               "pages": pages, "requirements": requirements,
-               "extraction_warnings": warnings + ["Review each evidence line before merging it into DOCX rules; PDF text alone cannot prove visual layout."]}
+    return {
+        "schema_version": "1.0",
+        "source": {"guide_filename": source.name, "type": "pdf"},
+        "pages": pages,
+        "requirements": requirements,
+        "extraction_warnings": warnings + [
+            "Review each evidence line before merging it into DOCX rules; PDF text alone cannot prove visual layout."
+        ],
+    }
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("guide_pdf", type=Path)
+    parser.add_argument("--output", "-o", required=True, type=Path)
+    args = parser.parse_args()
+    payload = extract_pdf_rules(args.guide_pdf)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Wrote {len(requirements)} page-cited requirement(s): {args.output}")
+    print(f"Wrote {len(payload['requirements'])} page-cited requirement(s): {args.output}")
 
 
 if __name__ == "__main__":

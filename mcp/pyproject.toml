@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "academic-paper-formatter-mcp"
+version = "0.1.1"
+description = "Local MCP server for template-driven Chinese thesis DOCX formatting and auditing."
+readme = "README.md"
+requires-python = "==3.13.15"
+license = "MIT"
+dependencies = [
+    "lxml>=5,<7",
+    "mcp>=2,<3",
+    "pdfplumber>=0.11,<1",
+    "pypdf>=6,<7",
+    "python-docx>=1.2,<2",
+]
+
+[project.scripts]
+academic-paper-formatter-mcp = "academic_paper_formatter_mcp.server:main"
+
+[dependency-groups]
+dev = [
+    "mcp[cli]>=2,<3",
+    "reportlab>=4,<6",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/academic_paper_formatter_mcp"]
+
+[tool.uv]
+package = true

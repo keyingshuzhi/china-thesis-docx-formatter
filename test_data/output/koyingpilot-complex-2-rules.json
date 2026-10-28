@@ -1,0 +1,438 @@
+{
+  "schema_version": "1.0",
+  "source": {
+    "template_filename": "school-template.docx",
+    "extractor": "academic-paper-formatter"
+  },
+  "page": {
+    "orientation": "portrait",
+    "page_width_cm": 21.59,
+    "page_height_cm": 27.94,
+    "margin_top_cm": 2.499,
+    "margin_bottom_cm": 2.0,
+    "margin_left_cm": 3.0,
+    "margin_right_cm": 2.499,
+    "header_distance_cm": 1.27,
+    "footer_distance_cm": 1.27
+  },
+  "sections": [
+    {
+      "index": 1,
+      "page": {
+        "orientation": "portrait",
+        "page_width_cm": 21.59,
+        "page_height_cm": 27.94,
+        "margin_top_cm": 2.499,
+        "margin_bottom_cm": 2.0,
+        "margin_left_cm": 3.0,
+        "margin_right_cm": 2.499,
+        "header_distance_cm": 1.27,
+        "footer_distance_cm": 1.27
+      },
+      "header_footer": {
+        "header": {
+          "linked_to_previous": true,
+          "paragraph_count": 1,
+          "has_visible_text": false
+        },
+        "footer": {
+          "linked_to_previous": false,
+          "paragraph_count": 1,
+          "has_visible_text": true
+        }
+      }
+    }
+  ],
+  "styles": {
+    "Normal": {
+      "style_id": "Normal",
+      "type": "PARAGRAPH",
+      "based_on": null,
+      "format": {
+        "font": {
+          "name": "Hiragino Sans GB",
+          "east_asia": "Hiragino Sans GB",
+          "size_pt": 12.0,
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "color": null
+        },
+        "paragraph": {
+          "alignment": null,
+          "first_line_indent_cm": 0.741,
+          "left_indent_cm": null,
+          "right_indent_cm": null,
+          "space_before_pt": null,
+          "space_after_pt": null,
+          "line_spacing_pt": null,
+          "line_spacing_multiple": 1.5,
+          "keep_with_next": null,
+          "page_break_before": null
+        }
+      }
+    },
+    "Heading 1": {
+      "style_id": "Heading1",
+      "type": "PARAGRAPH",
+      "based_on": "Normal",
+      "format": {
+        "font": {
+          "name": "Hiragino Sans GB",
+          "east_asia": "Hiragino Sans GB",
+          "size_pt": 16.0,
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "color": "365F91"
+        },
+        "paragraph": {
+          "alignment": null,
+          "first_line_indent_cm": null,
+          "left_indent_cm": null,
+          "right_indent_cm": null,
+          "space_before_pt": 24.0,
+          "space_after_pt": 0.0,
+          "line_spacing_pt": null,
+          "line_spacing_multiple": null,
+          "keep_with_next": true,
+          "page_break_before": null
+        }
+      }
+    },
+    "Caption": {
+      "style_id": "Caption",
+      "type": "PARAGRAPH",
+      "based_on": "Normal",
+      "format": {
+        "font": {
+          "name": "Hiragino Sans GB",
+          "east_asia": "Hiragino Sans GB",
+          "size_pt": 10.5,
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "color": "4F81BD"
+        },
+        "paragraph": {
+          "alignment": null,
+          "first_line_indent_cm": null,
+          "left_indent_cm": null,
+          "right_indent_cm": null,
+          "space_before_pt": null,
+          "space_after_pt": null,
+          "line_spacing_pt": null,
+          "line_spacing_multiple": 1.0,
+          "keep_with_next": null,
+          "page_break_before": null
+        }
+      }
+    },
+    "论文题目": {
+      "style_id": "论文题目",
+      "type": "PARAGRAPH",
+      "based_on": null,
+      "format": {
+        "font": {
+          "name": "Hiragino Sans GB",
+          "east_asia": "Hiragino Sans GB",
+          "size_pt": 18.0,
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "color": null
+        },
+        "paragraph": {
+          "alignment": "CENTER",
+          "first_line_indent_cm": null,
+          "left_indent_cm": null,
+          "right_indent_cm": null,
+          "space_before_pt": null,
+          "space_after_pt": null,
+          "line_spacing_pt": null,
+          "line_spacing_multiple": null,
+          "keep_with_next": null,
+          "page_break_before": null
+        }
+      }
+    },
+    "参考文献": {
+      "style_id": "参考文献",
+      "type": "PARAGRAPH",
+      "based_on": null,
+      "format": {
+        "font": {
+          "name": "Hiragino Sans GB",
+          "east_asia": "Hiragino Sans GB",
+          "size_pt": 10.5,
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "color": null
+        },
+        "paragraph": {
+          "alignment": null,
+          "first_line_indent_cm": null,
+          "left_indent_cm": null,
+          "right_indent_cm": null,
+          "space_before_pt": null,
+          "space_after_pt": null,
+          "line_spacing_pt": null,
+          "line_spacing_multiple": null,
+          "keep_with_next": null,
+          "page_break_before": null
+        }
+      }
+    }
+  },
+  "role_rules": {
+    "heading_1": {
+      "source_style": "Heading 1",
+      "source_style_id": "Heading1",
+      "confidence": "inferred_from_style_name",
+      "format": {
+        "font": {
+          "name": "Hiragino Sans GB",
+          "east_asia": "Hiragino Sans GB",
+          "size_pt": 16.0,
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "color": "365F91"
+        },
+        "paragraph": {
+          "alignment": null,
+          "first_line_indent_cm": null,
+          "left_indent_cm": null,
+          "right_indent_cm": null,
+          "space_before_pt": 24.0,
+          "space_after_pt": 0.0,
+          "line_spacing_pt": null,
+          "line_spacing_multiple": null,
+          "keep_with_next": true,
+          "page_break_before": null
+        }
+      }
+    },
+    "caption": {
+      "source_style": "Caption",
+      "source_style_id": "Caption",
+      "confidence": "inferred_from_style_name",
+      "format": {
+        "font": {
+          "name": "Hiragino Sans GB",
+          "east_asia": "Hiragino Sans GB",
+          "size_pt": 10.5,
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "color": "4F81BD"
+        },
+        "paragraph": {
+          "alignment": null,
+          "first_line_indent_cm": null,
+          "left_indent_cm": null,
+          "right_indent_cm": null,
+          "space_before_pt": null,
+          "space_after_pt": null,
+          "line_spacing_pt": null,
+          "line_spacing_multiple": 1.0,
+          "keep_with_next": null,
+          "page_break_before": null
+        }
+      }
+    },
+    "title": {
+      "source_style": "论文题目",
+      "source_style_id": "论文题目",
+      "confidence": "inferred_from_style_name",
+      "format": {
+        "font": {
+          "name": "Hiragino Sans GB",
+          "east_asia": "Hiragino Sans GB",
+          "size_pt": 18.0,
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "color": null
+        },
+        "paragraph": {
+          "alignment": "CENTER",
+          "first_line_indent_cm": null,
+          "left_indent_cm": null,
+          "right_indent_cm": null,
+          "space_before_pt": null,
+          "space_after_pt": null,
+          "line_spacing_pt": null,
+          "line_spacing_multiple": null,
+          "keep_with_next": null,
+          "page_break_before": null
+        }
+      }
+    },
+    "reference_entry": {
+      "source_style": "参考文献",
+      "source_style_id": "参考文献",
+      "confidence": "inferred_from_style_name",
+      "format": {
+        "font": {
+          "name": "Hiragino Sans GB",
+          "east_asia": "Hiragino Sans GB",
+          "size_pt": 10.5,
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "color": null
+        },
+        "paragraph": {
+          "alignment": null,
+          "first_line_indent_cm": null,
+          "left_indent_cm": null,
+          "right_indent_cm": null,
+          "space_before_pt": null,
+          "space_after_pt": null,
+          "line_spacing_pt": null,
+          "line_spacing_multiple": null,
+          "keep_with_next": null,
+          "page_break_before": null
+        }
+      }
+    },
+    "body": {
+      "source_style": "Normal",
+      "source_style_id": "Normal",
+      "confidence": "normal_style_fallback",
+      "format": {
+        "font": {
+          "name": "Hiragino Sans GB",
+          "east_asia": "Hiragino Sans GB",
+          "size_pt": 12.0,
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "color": null
+        },
+        "paragraph": {
+          "alignment": null,
+          "first_line_indent_cm": 0.741,
+          "left_indent_cm": null,
+          "right_indent_cm": null,
+          "space_before_pt": null,
+          "space_after_pt": null,
+          "line_spacing_pt": null,
+          "line_spacing_multiple": 1.5,
+          "keep_with_next": null,
+          "page_break_before": null
+        }
+      }
+    }
+  },
+  "table_rules": {
+    "observed": true,
+    "style_name": "Table Grid",
+    "alignment": null,
+    "cell_vertical_alignment": null,
+    "cell_text_format": {
+      "font": {
+        "name": null,
+        "east_asia": null,
+        "size_pt": null,
+        "bold": null,
+        "italic": null,
+        "underline": null,
+        "color": null
+      },
+      "paragraph": {
+        "alignment": null,
+        "first_line_indent_cm": null,
+        "left_indent_cm": null,
+        "right_indent_cm": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing_pt": null,
+        "line_spacing_multiple": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      }
+    }
+  },
+  "figure_rules": {
+    "caption_role": "caption"
+  },
+  "reference_rules": {
+    "entry_role": "reference_entry"
+  },
+  "degree_profile": {
+    "level": "master",
+    "label": "中国硕士学位论文",
+    "scope": "China domestic degree thesis",
+    "is_formatting_authority": false
+  },
+  "document_structure": {
+    "detected_sections": [
+      {
+        "role": "references",
+        "label": "参考文献",
+        "paragraph": 5,
+        "text": "References",
+        "style": "Normal"
+      }
+    ],
+    "review_sections": [
+      {
+        "role": "declaration",
+        "label": "原创性声明或授权页",
+        "detected": false
+      },
+      {
+        "role": "abstract_cn",
+        "label": "中文摘要",
+        "detected": false
+      },
+      {
+        "role": "abstract_en",
+        "label": "英文摘要",
+        "detected": false
+      },
+      {
+        "role": "keywords_cn",
+        "label": "中文关键词",
+        "detected": false
+      },
+      {
+        "role": "keywords_en",
+        "label": "英文关键词",
+        "detected": false
+      },
+      {
+        "role": "toc",
+        "label": "目录",
+        "detected": false
+      },
+      {
+        "role": "references",
+        "label": "参考文献",
+        "detected": true
+      },
+      {
+        "role": "acknowledgements",
+        "label": "致谢",
+        "detected": false
+      },
+      {
+        "role": "appendices",
+        "label": "附录",
+        "detected": false
+      },
+      {
+        "role": "research_achievements",
+        "label": "攻读学位期间成果页",
+        "detected": false
+      }
+    ],
+    "note": "These are common domestic degree-thesis components for manual confirmation. The official school template and written rules decide applicability, order, and formatting."
+  },
+  "extraction_warnings": [
+    "Body formatting was inferred from Normal; confirm it matches thesis body text."
+  ]
+}

@@ -8,4 +8,4 @@
 4. `approved-content.json`：已审核的占位符替换文本。
 5. `verified-references.json`：可补入缺失 [2] 条目的权威元数据。
 
-请按项目根目录的 `SKILL.md` 顺序执行验证。所有输出请写到此目录下的 `output/` 子目录，勿覆盖源数据。
+请按 [`skill/academic-paper-formatter/SKILL.md`](../skill/academic-paper-formatter/SKILL.md) 的顺序执行验证。所有输出请写到此目录下的 `output/` 子目录，勿覆盖源数据。

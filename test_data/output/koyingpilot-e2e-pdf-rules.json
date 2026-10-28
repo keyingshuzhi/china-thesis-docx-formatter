@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "source": {
+    "guide_filename": "school-guideline.pdf",
+    "type": "pdf"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "characters": 184
+    },
+    {
+      "page": 2,
+      "characters": 24
+    }
+  ],
+  "requirements": [
+    {
+      "page": 1,
+      "topics": [
+        "宋体",
+        "行距"
+      ],
+      "evidence": "1. 正文使用宋体小四，首行缩进 2 个字符，1.5 倍行距。"
+    },
+    {
+      "page": 1,
+      "topics": [
+        "页边距"
+      ],
+      "evidence": "2. 页边距：上 2.5 cm，下 2.0 cm，左 3.0 cm，右 2.5 cm。"
+    },
+    {
+      "page": 1,
+      "topics": [
+        "宋体",
+        "黑体",
+        "图",
+        "表"
+      ],
+      "evidence": "3. 一级标题使用黑体 16 pt，图表题注使用宋体 10.5 pt。"
+    },
+    {
+      "page": 1,
+      "topics": [
+        "目录",
+        "页码"
+      ],
+      "evidence": "4. 目录、页码和交叉引用在提交前必须更新。"
+    },
+    {
+      "page": 1,
+      "topics": [
+        "参考文献"
+      ],
+      "evidence": "5. 参考文献采用数字顺序编码，文内引文必须与条目对应。"
+    },
+    {
+      "page": 2,
+      "topics": [
+        "图",
+        "表"
+      ],
+      "evidence": "附加说明：图像不得遮挡正文；表格内容应完整可读。"
+    }
+  ],
+  "extraction_warnings": [
+    "Review each evidence line before merging it into DOCX rules; PDF text alone cannot prove visual layout."
+  ]
+}
